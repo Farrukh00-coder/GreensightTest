@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="form.js"></script>
+</head>
+<body>
+	<div class="col-sm-6 col-sm-offset-3">
+		<h1>Registration</h1>
+
+		<form action="process.php" method="POST">
+			<div id="name_group" class="form-group">
+				<label for="name">Name</label>
+				<input type="text" name="name" class="form-control" id="name" placeholder="Your name">
+			</div>
+
+			<div id="surname_group" class="form-group">
+				<label for="surname">Surname</label>
+				<input type="text" name="surname" class="form-control" id="surname" placeholder="Your surname">
+			</div>
+
+			<div id="email_group" class="form-group">
+				<label for="email">Email</label>
+				<input type="text" name="email" class="form-control" id="email" placeholder="someone@example.com">
+			</div>
+
+			<div id="password_group" class="form-group">
+				<label for="password">Password</label>
+				<input type="password" name="password" class="form-control" id="password" placeholder="******">
+			</div>
+
+			<div id="confirm_password_group" class="form-group">
+				<label for="confirm_password">Confirm password</label>
+				<input type="password" name="confirm_password" class="form-control" id="confirm_password" placeholder="******">
+			</div>
+
+			<button type="submit" class="btn btn-success">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
